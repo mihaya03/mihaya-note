@@ -1,0 +1,30 @@
+baseURL: "https://mihaya03.github.io/mihaya-note/"
+languageCode: ja
+title: mihaya note
+theme: beautifulhugo
+
+params:
+  customCSS: ["css/custom.css"]
+  # pygmentsCodeFence: true
+  # pygmentsUseClasses: true
+
+module:
+  imports:
+    - path: "beautifulhugo"
+
+menus:
+  main:
+    - identifier: "categories"
+      name: "Categories"
+      url: "/categories/"
+      weight: 10 # The wieght determines the order of the menu items.
+
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 20 # The wieght determines the order of the menu items.
+
+    - identifier: "archives"
+      name: "Archives"
+      url: "/archives/"
+      weight: 30 # The wieght determines the order of the menu items.

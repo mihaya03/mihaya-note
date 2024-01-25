@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mihaya note</title>
+    <link>https://mihaya03.github.io/mihaya-note/</link>
+    <description>Recent content on mihaya note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 30 Jan 2024 08:57:20 +0900</lastBuildDate>
+    <atom:link href="https://mihaya03.github.io/mihaya-note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python itertools</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/python-itertools/</link>
+      <pubDate>Tue, 30 Jan 2024 08:57:20 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/python-itertools/</guid>
+      <description>chains 複数のイテラブルを1つのイテラブルに連結する 全要素を一度に保持する必要がないためメモリ効率が向上する from itertools import chain iterable1 = [1, 2, 3] iterable2 = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;] iterable3 = (4, 5) combined = chain(iterable1, iterable2, iterable3) for item in combined: print(item) # 1 2 3 a b c 4 5 参考 itertools &amp;mdash; 効率的なループ実行のためのイテレータ生成関数 </description>
+    </item>
+    <item>
+      <title>テスト投稿</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/test/</link>
+      <pubDate>Thu, 25 Jan 2024 19:47:31 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/test/</guid>
+      <description>テスト投稿 記事の削除をpublicフォルダに反映させる hugo --cleanDestinationDir </description>
+    </item>
+    <item>
+      <title>Archives</title>
+      <link>https://mihaya03.github.io/mihaya-note/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/archives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Categories</title>
+      <link>https://mihaya03.github.io/mihaya-note/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/categories/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
