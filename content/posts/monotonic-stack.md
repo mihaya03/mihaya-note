@@ -2,6 +2,7 @@
 title: "Monotonic Stack"
 date: 2024-02-22T22:34:38+09:00
 draft: false
+tags: ["algorithm"]
 ---
 ## Monotonic Stack
 
