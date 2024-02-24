@@ -6,8 +6,43 @@
     <description>Recent content in Posts on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Jan 2024 08:57:20 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 24 Feb 2024 10:53:13 +0900</lastBuildDate>
     <atom:link href="https://mihaya03.github.io/mihaya-note/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdownlint-cli2</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</link>
+      <pubDate>Sat, 24 Feb 2024 10:53:13 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</guid>
+      <description>markdownlint-cli2の使い方 概要 markdownlint-cli2はmarkdown用のlinter CLI上で操作可能 インストール npm install markdownlint-cli2 --global 参考 markdownlint-cli2 (GitHub) </description>
+    </item>
+    <item>
+      <title>Yarn</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/yarn/</link>
+      <pubDate>Sat, 24 Feb 2024 10:29:21 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/yarn/</guid>
+      <description>Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install </description>
+    </item>
+    <item>
+      <title>Monotonic Stack</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/</link>
+      <pubDate>Thu, 22 Feb 2024 22:34:38 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/</guid>
+      <description>Monotonic Stack 概要 格納される要素が単調増加または単調減少のいずれかの順序を保つスタックである 性質 スタック内の要素は、単調増加または単調減少の順序を保つ ある要素より大きい（または小さい）次の要素を見つけるなど、特定の条件における検索を効率的に実施できる。これは、各要素がスタックにプッシュされたり、ポップされたりする操作が各1回、計2回しか行われないため、全体の計算量が O(n) となることによる。 実装例 各要素について、次に大きい要素を求め、そのインデックスを要素とする配列を作成する。次に大きい要素が存在しない場合は -1 とする。&#xA;def nextGreaterElement(inputs: list[int]) -&amp;gt; list[int]: stack = [] ans = [-1] * len(inputs) for i in range(len(inputs)): while stack and inputs[i] &amp;gt; inputs[stack[-1]]: idx = stack.pop() ans[idx] = i stack.append(i) return ans 参考 Introduction to Monotonic Stack – Data Structure and Algorithm Tutorials </description>
+    </item>
+    <item>
+      <title>Go encoding/json</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/go-json/</link>
+      <pubDate>Sat, 17 Feb 2024 20:16:36 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/go-json/</guid>
+      <description>encoding/jsonパッケージの使い方 概要 encoding/jsonパッケージは、JSONデータのエンコード（Go構造体→JSON）とデコード（JSON→Go構造体）を行うための関数と型を提供する インメモリを扱うEncoding/Decoding func Marshal(v any) ([]byte, error)&#xA;Go構造体のフィールド名をkey、フィールドの値をvalueとしたJSONにエンコードする keyの値はstring型である必要がある フィールドの値がポインタ型の場合、ポインタが指す値がエンコードされる 構造体のフィールドのうち、大文字で始まる変数のみがエンコードの対象となる SONのkey名称は、Go構造体のフィールドに指定されたjsonタグを優先し、存在しない場合はフィールド名を使用する func Unmarshal(data []byte, v any) error&#xA;JSONデータをGo構造体にデコードする JSONデータのkeyの名称とGo構造体のフィールド名の対応は下記の優先順位で定義される jsonタグの値と一致するGo構造体のフィールド名 Go構造体のフィールドの名称（大文字小文字は区別しない） ストリームを扱うEncoding/Decoding JSONを扱うReaderとWriterを使用する&#xA;Reader: json.Endoer func NewEncoder(w io.Writer) *Encoder 指定されたio.WriterにJSONを書き込むためのエンコーダを作成する func (enc *Encoder) Encode(v any) error JSON形式でエンコードし、それをストリームに書き込む Writer: json.Decoder func NewDecoder(r io.Reader ) *Decoder 指定されたio.ReaderからJSONを読み込むためのデコーダを作成する func (dec *Decoder) Decode(v any) error JSONを引数のGo構造体にデコードする 参考 JSON and Go jsonのドキュメント </description>
+    </item>
+    <item>
+      <title>Go strconv</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/go-atoi/</link>
+      <pubDate>Sat, 17 Feb 2024 16:13:15 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/go-atoi/</guid>
+      <description>strconv 文字列と基本的なデータ型との変換 基本的な使い方 strconv.Atoi(s string) (int, error)&#xA;文字列を整数に変換する strconv.Itoa(i int) string&#xA;整数を文字列に変換 strconv.ParseFloat(s string, bitSize int) (float64, error)&#xA;文字列を浮動小数点型に変換 strconv.FormatFloat(f float64, fmt byte, prec, bitSize int) string&#xA;浮動小数点数を文字列に変換 fmtはフォーマット b: 2進数表記の指数形式 e: 指数形式 f: 通常の小数点形式 g: 数値の有効桁数を基に非指数形式または指数形式を自動選択 precは精度 指定したフォーマットに対応して、小数点以下の桁数、有効数字などを指定する strconv.ParseBool(str string) (bool, error)&#xA;文字列を論理値に変換 bool型と認識される文字列はtrue、false、1、0、t、fなど 参考 strconv </description>
+    </item>
     <item>
       <title>Python itertools</title>
       <link>https://mihaya03.github.io/mihaya-note/posts/python-itertools/</link>

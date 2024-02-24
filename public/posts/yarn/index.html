@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Yarn - </title>
+
+  <meta name="description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install "><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "mihaya note",
+    
+    "url": "https:\/\/mihaya03.github.io\/mihaya-note\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/mihaya03.github.io\/mihaya-note\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/mihaya03.github.io\/mihaya-note\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/mihaya03.github.io\/mihaya-note\/posts\/yarn\/",
+          "name": "Yarn"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "Yarn",
+  "description" : "Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install ",
+  "inLanguage" : "en",
+  "wordCount":  43 ,
+  "datePublished" : "2024-02-24T10:29:21",
+  "dateModified" : "2024-02-24T10:29:21",
+  "image" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+  "keywords" : [ "package manager, yarn" ],
+  "mainEntityOfPage" : "https:\/\/mihaya03.github.io\/mihaya-note\/posts\/yarn\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Yarn" />
+<meta property="og:description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install ">
+<meta property="og:url" content="https://mihaya03.github.io/mihaya-note/posts/yarn/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="mihaya note" />
+
+  <meta name="twitter:title" content="Yarn" />
+  <meta name="twitter:description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : …">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.123.3">
+  <link rel="alternate" href="https://mihaya03.github.io/mihaya-note/index.xml" type="application/rss+xml" title="mihaya note"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/syntax.css" /><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://mihaya03.github.io/mihaya-note/">mihaya note</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="/mihaya-note/categories/">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/mihaya-note/tags/">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Archives" href="/mihaya-note/archives/">Archives</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Yarn</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h2 id="yarn">Yarn</h2>
+<h3 id="プロジェクトの新規作成">プロジェクトの新規作成</h3>
+<pre tabindex="0"><code>yarn init
+</code></pre><ul>
+<li>プロジェクト情報を格納する<code>package.json</code>が生成される</li>
+</ul>
+<h3 id="依存関係の追加">依存関係の追加</h3>
+<pre tabindex="0"><code>yarn add [package]
+yarn add [package]@[version]
+yarn add [package]@[tag]
+</code></pre><ul>
+<li>yarn addのオプション
+<ul>
+<li><code>--dev</code>      : devDependenciesに依存関係を追加</li>
+<li><code>--peer</code>     : peerDependenciesに依存関係を追加</li>
+<li><code>--optional</code> : optionalDependenciesに依存関係を追加</li>
+</ul>
+</li>
+</ul>
+<h3 id="依存関係のアップグレード">依存関係のアップグレード</h3>
+<pre tabindex="0"><code>yarn upgrade [package]
+yarn upgrade [package]@[version]
+yarn upgrade [package]@[tag]
+</code></pre><h3 id="依存関係の削除">依存関係の削除</h3>
+<pre tabindex="0"><code>yarn remove [package]
+</code></pre><h3 id="依存関係のインストール">依存関係のインストール</h3>
+<pre tabindex="0"><code>yarn install
+</code></pre>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://mihaya03.github.io/mihaya-note//tags/package-manager/">package manager</a>&nbsp;
+            
+              <a href="https://mihaya03.github.io/mihaya-note//tags/yarn/">yarn</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/" data-toggle="tooltip" data-placement="top" title="Monotonic Stack">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/" data-toggle="tooltip" data-placement="top" title="markdownlint-cli2">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://mihaya03.github.io/mihaya-note/">mihaya note</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.123.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://mihaya03.github.io/mihaya-note/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://mihaya03.github.io/mihaya-note/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -2,38 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mihaya note</title>
-    <link>https://mihaya03.github.io/mihaya-note/</link>
+    <link>http://localhost:1313/mihaya-note/</link>
     <description>Recent content on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Jan 2024 08:57:20 +0900</lastBuildDate>
-    <atom:link href="https://mihaya03.github.io/mihaya-note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 10:53:13 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/mihaya-note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdownlint-cli2</title>
+      <link>http://localhost:1313/mihaya-note/posts/markdownlint-cli2/</link>
+      <pubDate>Sat, 24 Feb 2024 10:53:13 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/markdownlint-cli2/</guid>
+      <description>markdownlint-cli2の使い方 概要 markdownlint-cli2はCLIで操作可能なmarkdown用のlinterである インストール npm install markdownlint-cli2 --global コマンドの形式 markdownlint-cli2 glob0 [glob1] [...] [globN] [--config file] [--fix] [--help] [glob]：linterの対象ファイルを指定する。 [--config file]：lintのルールなどを記載した設定ファイルを指定する 設定ファイルは.markdownlint-cli2.jsonc、.markdownlint-cli2.yamlとなどの形式で記述する コマンドを実行するディレクトリまたは、その上位のディレクトリに設定ファイルが存在する場合、markdownlint-cli2はそれを自動的に検出して適用する [--fix]: lint実行時に誤りの検知とともに、修正を行う 設定ファイルの形式 設定ファイルのフォーマットに関する詳細はスキーマを参照する。以下では設定ファイル(.jsonc)の例を提示する。&#xA;{ // markdownlintの設定オブジェクト &amp;quot;config&amp;quot;: { &amp;quot;fenced-code-language&amp;quot;:false, // code blockの言語指定を許容 } }&#xA;参考 markdownlint-cli2 (GitHub) </description>
+    </item>
+    <item>
+      <title>Yarn</title>
+      <link>http://localhost:1313/mihaya-note/posts/yarn/</link>
+      <pubDate>Sat, 24 Feb 2024 10:29:21 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/yarn/</guid>
+      <description>Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install </description>
+    </item>
+    <item>
+      <title>Monotonic Stack</title>
+      <link>http://localhost:1313/mihaya-note/posts/monotonic-stack/</link>
+      <pubDate>Thu, 22 Feb 2024 22:34:38 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/monotonic-stack/</guid>
+      <description>Monotonic Stack 概要 格納される要素が単調増加または単調減少のいずれかの順序を保つスタックである 性質 スタック内の要素は、単調増加または単調減少の順序を保つ ある要素より大きい（または小さい）次の要素を見つけるなど、特定の条件における検索を効率的に実施できる。これは、各要素がスタックにプッシュされたり、ポップされたりする操作が各1回、計2回しか行われないため、全体の計算量が O(n) となることによる。 実装例 各要素について、次に大きい要素を求め、そのインデックスを要素とする配列を作成する。次に大きい要素が存在しない場合は -1 とする。&#xA;def nextGreaterElement(inputs: list[int]) -&amp;gt; list[int]: stack = [] ans = [-1] * len(inputs) for i in range(len(inputs)): while stack and inputs[i] &amp;gt; inputs[stack[-1]]: idx = stack.pop() ans[idx] = i stack.append(i) return ans 参考 Introduction to Monotonic Stack – Data Structure and Algorithm Tutorials </description>
+    </item>
+    <item>
+      <title>Go encoding/json</title>
+      <link>http://localhost:1313/mihaya-note/posts/go-json/</link>
+      <pubDate>Sat, 17 Feb 2024 20:16:36 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/go-json/</guid>
+      <description>encoding/jsonパッケージの使い方 概要 encoding/jsonパッケージは、JSONデータのエンコード（Go構造体→JSON）とデコード（JSON→Go構造体）を行うための関数と型を提供する インメモリを扱うEncoding/Decoding func Marshal(v any) ([]byte, error)&#xA;Go構造体のフィールド名をkey、フィールドの値をvalueとしたJSONにエンコードする keyの値はstring型である必要がある フィールドの値がポインタ型の場合、ポインタが指す値がエンコードされる 構造体のフィールドのうち、大文字で始まる変数のみがエンコードの対象となる SONのkey名称は、Go構造体のフィールドに指定されたjsonタグを優先し、存在しない場合はフィールド名を使用する func Unmarshal(data []byte, v any) error&#xA;JSONデータをGo構造体にデコードする JSONデータのkeyの名称とGo構造体のフィールド名の対応は下記の優先順位で定義される jsonタグの値と一致するGo構造体のフィールド名 Go構造体のフィールドの名称（大文字小文字は区別しない） ストリームを扱うEncoding/Decoding JSONを扱うReaderとWriterを使用する&#xA;Reader: json.Endoer func NewEncoder(w io.Writer) *Encoder 指定されたio.WriterにJSONを書き込むためのエンコーダを作成する func (enc *Encoder) Encode(v any) error JSON形式でエンコードし、それをストリームに書き込む Writer: json.Decoder func NewDecoder(r io.Reader ) *Decoder 指定されたio.ReaderからJSONを読み込むためのデコーダを作成する func (dec *Decoder) Decode(v any) error JSONを引数のGo構造体にデコードする 参考 JSON and Go jsonのドキュメント </description>
+    </item>
+    <item>
+      <title>Go strconv</title>
+      <link>http://localhost:1313/mihaya-note/posts/go-atoi/</link>
+      <pubDate>Sat, 17 Feb 2024 16:13:15 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/go-atoi/</guid>
+      <description>strconv 文字列と基本的なデータ型との変換 基本的な使い方 strconv.Atoi(s string) (int, error)&#xA;文字列を整数に変換する strconv.Itoa(i int) string&#xA;整数を文字列に変換 strconv.ParseFloat(s string, bitSize int) (float64, error)&#xA;文字列を浮動小数点型に変換 strconv.FormatFloat(f float64, fmt byte, prec, bitSize int) string&#xA;浮動小数点数を文字列に変換 fmtはフォーマット b: 2進数表記の指数形式 e: 指数形式 f: 通常の小数点形式 g: 数値の有効桁数を基に非指数形式または指数形式を自動選択 precは精度 指定したフォーマットに対応して、小数点以下の桁数、有効数字などを指定する strconv.ParseBool(str string) (bool, error)&#xA;文字列を論理値に変換 bool型と認識される文字列はtrue、false、1、0、t、fなど 参考 strconv </description>
+    </item>
+    <item>
+      <title>Goならわかるシステムプログラミング 演習問題の解答</title>
+      <link>http://localhost:1313/mihaya-note/posts/go-system-programming-ch03/</link>
+      <pubDate>Wed, 07 Feb 2024 23:06:14 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/posts/go-system-programming-ch03/</guid>
+      <description>Q3.1：ファイルのコピー package main import ( &amp;#34;flag&amp;#34; &amp;#34;io&amp;#34; &amp;#34;os&amp;#34; ) func main() { oldFileName := flag.String(&amp;#34;old&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;古いファイルのパス&amp;#34;) newFileName := flag.String(&amp;#34;new&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;新しいファイルのパス&amp;#34;) flag.Parse() oldFilePath := *oldFileName newFilePath := *newFileName oldFile, err := os.Open(oldFilePath) if err != nil { panic(err) } defer oldFile.Close() newFile, err := os.Create(newFilePath) if err != nil { panic(err) } defer newFile.Close() if _, err := io.Copy(newFile, oldFile); err != nil { panic(err) } } Q3.2：テスト用の適当なサイズのファイルを作成 package main import ( &amp;#34;crypto/rand&amp;#34; &amp;#34;io&amp;#34; &amp;#34;os&amp;#34; ) func main() { file, err := os.</description>
+    </item>
     <item>
       <title>Python itertools</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/python-itertools/</link>
+      <link>http://localhost:1313/mihaya-note/posts/python-itertools/</link>
       <pubDate>Tue, 30 Jan 2024 08:57:20 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/python-itertools/</guid>
+      <guid>http://localhost:1313/mihaya-note/posts/python-itertools/</guid>
       <description>chains 複数のイテラブルを1つのイテラブルに連結する 全要素を一度に保持する必要がないためメモリ効率が向上する from itertools import chain iterable1 = [1, 2, 3] iterable2 = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;] iterable3 = (4, 5) combined = chain(iterable1, iterable2, iterable3) for item in combined: print(item) # 1 2 3 a b c 4 5 参考 itertools &amp;mdash; 効率的なループ実行のためのイテレータ生成関数 </description>
     </item>
     <item>
       <title>テスト投稿</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/test/</link>
+      <link>http://localhost:1313/mihaya-note/posts/test/</link>
       <pubDate>Thu, 25 Jan 2024 19:47:31 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/test/</guid>
+      <guid>http://localhost:1313/mihaya-note/posts/test/</guid>
       <description>テスト投稿 記事の削除をpublicフォルダに反映させる hugo --cleanDestinationDir </description>
     </item>
     <item>
       <title>Archives</title>
-      <link>https://mihaya03.github.io/mihaya-note/archives/</link>
+      <link>http://localhost:1313/mihaya-note/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/archives/</guid>
+      <guid>http://localhost:1313/mihaya-note/archives/</guid>
       <description></description>
     </item>
     <item>
       <title>Categories</title>
-      <link>https://mihaya03.github.io/mihaya-note/categories/</link>
+      <link>http://localhost:1313/mihaya-note/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/categories/</guid>
+      <guid>http://localhost:1313/mihaya-note/categories/</guid>
       <description></description>
     </item>
   </channel>

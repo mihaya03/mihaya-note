@@ -2,6 +2,7 @@
 title: "Go encoding/json"
 date: 2024-02-17T20:16:36+09:00
 draft: false
+tags: ["Go", "encoding/json"]
 ---
 
 ## encoding/jsonパッケージの使い方
@@ -39,7 +40,7 @@ JSONを扱うReaderとWriterを使用する
     * 指定されたio.ReaderからJSONを読み込むためのデコーダを作成する
   * `func (dec *Decoder) Decode(v any) error`
     * JSONを引数のGo構造体にデコードする
-    
+
 ### 参考
 
 * [JSON and Go](https://go.dev/blog/json)

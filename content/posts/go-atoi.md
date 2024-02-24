@@ -2,6 +2,7 @@
 title: "Go strconv"
 date: 2024-02-17T16:13:15+09:00
 draft: false
+tags: ["Go", "strconv"]
 ---
 
 ## strconv 文字列と基本的なデータ型との変換

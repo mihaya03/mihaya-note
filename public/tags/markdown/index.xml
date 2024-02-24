@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on mihaya note</title>
+    <link>https://mihaya03.github.io/mihaya-note/tags/markdown/</link>
+    <description>Recent content in Markdown on mihaya note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 24 Feb 2024 10:53:13 +0900</lastBuildDate>
+    <atom:link href="https://mihaya03.github.io/mihaya-note/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdownlint-cli2</title>
+      <link>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</link>
+      <pubDate>Sat, 24 Feb 2024 10:53:13 +0900</pubDate>
+      <guid>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</guid>
+      <description>markdownlint-cli2の使い方 概要 markdownlint-cli2はmarkdown用のlinter CLI上で操作可能 インストール npm install markdownlint-cli2 --global 参考 markdownlint-cli2 (GitHub) </description>
+    </item>
+  </channel>
+</rss>
