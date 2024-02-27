@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithm on mihaya note</title>
-    <link>https://mihaya03.github.io/mihaya-note/tags/algorithm/</link>
+    <link>http://localhost:1313/mihaya-note/tags/algorithm/</link>
     <description>Recent content in Algorithm on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 22 Feb 2024 22:34:38 +0900</lastBuildDate>
-    <atom:link href="https://mihaya03.github.io/mihaya-note/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mihaya-note/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monotonic Stack</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/</link>
+      <link>http://localhost:1313/mihaya-note/posts/monotonic-stack/</link>
       <pubDate>Thu, 22 Feb 2024 22:34:38 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/</guid>
+      <guid>http://localhost:1313/mihaya-note/posts/monotonic-stack/</guid>
       <description>Monotonic Stack 概要 格納される要素が単調増加または単調減少のいずれかの順序を保つスタックである 性質 スタック内の要素は、単調増加または単調減少の順序を保つ ある要素より大きい（または小さい）次の要素を見つけるなど、特定の条件における検索を効率的に実施できる。これは、各要素がスタックにプッシュされたり、ポップされたりする操作が各1回、計2回しか行われないため、全体の計算量が O(n) となることによる。 実装例 各要素について、次に大きい要素を求め、そのインデックスを要素とする配列を作成する。次に大きい要素が存在しない場合は -1 とする。&#xA;def nextGreaterElement(inputs: list[int]) -&amp;gt; list[int]: stack = [] ans = [-1] * len(inputs) for i in range(len(inputs)): while stack and inputs[i] &amp;gt; inputs[stack[-1]]: idx = stack.pop() ans[idx] = i stack.append(i) return ans 参考 Introduction to Monotonic Stack – Data Structure and Algorithm Tutorials </description>
     </item>
   </channel>

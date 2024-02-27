@@ -4,17 +4,20 @@ title: mihaya note
 theme: beautifulhugo
 
 params:
-  customCSS: ["css/custom.css"]
-  # pygmentsCodeFence: true
-  # pygmentsUseClasses: true
+  KaTeX: true
 
 module:
   imports:
     - path: "beautifulhugo"
 
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  archive: "archives"
+
 menus:
   main:
-    - identifier: "categories"
+    - identifier: "terms"
       name: "Categories"
       url: "/categories/"
       weight: 10 # The wieght determines the order of the menu items.
@@ -24,7 +27,7 @@ menus:
       url: "/tags/"
       weight: 20 # The wieght determines the order of the menu items.
 
-    - identifier: "archives"
-      name: "Archives"
-      url: "/archives/"
-      weight: 30 # The wieght determines the order of the menu items.
+author: 
+  github: https://github.com/mihaya03
+  
+  

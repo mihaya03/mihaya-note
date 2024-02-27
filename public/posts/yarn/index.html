@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
-  <head>
+  <head><script src="/mihaya-note/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mihaya-note/livereload" data-no-instant defer></script>
     
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
- 
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-RZiiyZG+SLJXKH5nPe8aoiyFp4yIqF5YiA8V+0v9zIAZ9JhRXqMfM5/0OzXmd0bA" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXnUM8C1LlBbLggFnkBfVJ9pY5" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "$", right: "$", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ]
+    });
+  });
+</script>
+
+
 
 
       <title>Yarn - </title>
 
-  <meta name="description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install "><script type="application/ld+json">
+  <meta name="description" content="Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプションは代表例は下記の通りである。
+--dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 なお、各依存関係の特徴を以下の通りである。
+devDependencies: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係 peerDependencies: あるパッケージが動作するために必要となる他のパッケージの依存関係 optionalDependencies: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install インストール済みのパッケージを一覧表示 yarn list 参考 Yarn 公式ドキュメント "><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
     "name": "mihaya note",
     
-    "url": "https:\/\/mihaya03.github.io\/mihaya-note\/"
+    "url": "http:\/\/localhost:1313\/mihaya-note\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/mihaya03.github.io\/mihaya-note\/"
+  "url": "http:\/\/localhost:1313\/mihaya-note\/"
   
   
   
@@ -40,14 +61,14 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/mihaya03.github.io\/mihaya-note\/",
+          "@id": "http:\/\/localhost:1313\/mihaya-note\/",
           "name": "home"
         }
     },{
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/mihaya03.github.io\/mihaya-note\/posts\/yarn\/",
+          "@id": "http:\/\/localhost:1313\/mihaya-note\/posts\/yarn\/",
           "name": "Yarn"
         }
     }]
@@ -60,20 +81,20 @@
     "name" : ""
   },
   "headline": "Yarn",
-  "description" : "Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install ",
+  "description" : "Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプションは代表例は下記の通りである。\n--dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 なお、各依存関係の特徴を以下の通りである。\ndevDependencies: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係 peerDependencies: あるパッケージが動作するために必要となる他のパッケージの依存関係 optionalDependencies: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install インストール済みのパッケージを一覧表示 yarn list 参考 Yarn 公式ドキュメント ",
   "inLanguage" : "en",
-  "wordCount":  43 ,
+  "wordCount":  57 ,
   "datePublished" : "2024-02-24T10:29:21",
   "dateModified" : "2024-02-24T10:29:21",
-  "image" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+  "image" : "http:\/\/localhost:1313\/mihaya-note\/",
   "keywords" : [ "package manager, yarn" ],
-  "mainEntityOfPage" : "https:\/\/mihaya03.github.io\/mihaya-note\/posts\/yarn\/",
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/mihaya-note\/posts\/yarn\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+    "name" : "http:\/\/localhost:1313\/mihaya-note\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/mihaya03.github.io\/mihaya-note\/",
+        "url" : "http:\/\/localhost:1313\/mihaya-note\/",
         "height" :  60 ,
         "width" :  60
     }
@@ -82,19 +103,21 @@
 </script>
 
 <meta property="og:title" content="Yarn" />
-<meta property="og:description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install ">
-<meta property="og:url" content="https://mihaya03.github.io/mihaya-note/posts/yarn/" />
+<meta property="og:description" content="Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプションは代表例は下記の通りである。
+--dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 なお、各依存関係の特徴を以下の通りである。
+devDependencies: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係 peerDependencies: あるパッケージが動作するために必要となる他のパッケージの依存関係 optionalDependencies: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install インストール済みのパッケージを一覧表示 yarn list 参考 Yarn 公式ドキュメント ">
+<meta property="og:url" content="http://localhost:1313/mihaya-note/posts/yarn/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="mihaya note" />
 
   <meta name="twitter:title" content="Yarn" />
-  <meta name="twitter:description" content="Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : …">
+  <meta name="twitter:description" content="Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add …">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="generator" content="Hugo 0.123.3">
-  <link rel="alternate" href="https://mihaya03.github.io/mihaya-note/index.xml" type="application/rss+xml" title="mihaya note"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <meta name="generator" content="Hugo 0.123.4">
+  <link rel="alternate" href="http://localhost:1313/mihaya-note/index.xml" type="application/rss+xml" title="mihaya note"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/syntax.css" /><link rel="stylesheet" href="https://mihaya03.github.io/mihaya-note/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="/mihaya-note/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="http://localhost:1313/mihaya-note/css/syntax.css" /><link rel="stylesheet" href="http://localhost:1313/mihaya-note/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
   </head>
@@ -108,7 +131,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://mihaya03.github.io/mihaya-note/">mihaya note</a>
+      <a class="navbar-brand" href="http://localhost:1313/mihaya-note/">mihaya note</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -123,12 +146,6 @@
           
             <li>
               <a title="Tags" href="/mihaya-note/tags/">Tags</a>
-            </li>
-          
-        
-          
-            <li>
-              <a title="Archives" href="/mihaya-note/archives/">Archives</a>
             </li>
           
         
@@ -236,24 +253,42 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <h2 id="yarn">Yarn</h2>
+
+        
+          <div class="blog-tags">
+            
+              <a href="http://localhost:1313/mihaya-note//tags/package-manager/">package manager</a>&nbsp;
+            
+              <a href="http://localhost:1313/mihaya-note//tags/yarn/">yarn</a>&nbsp;
+            
+          </div>
+        
+
+        <h2 id="yarnの使い方">Yarnの使い方</h2>
 <h3 id="プロジェクトの新規作成">プロジェクトの新規作成</h3>
 <pre tabindex="0"><code>yarn init
 </code></pre><ul>
-<li>プロジェクト情報を格納する<code>package.json</code>が生成される</li>
+<li>プロジェクト情報を格納する<code>package.json</code>が生成される
+<ul>
+<li><code>package.json</code>におけるバージョンの記載形式は、<a href="https://chore-update--yarnpkg.netlify.app/ja/docs/dependency-versions">公式ドキュメントのセマンティックバージョニングの項目)</a>を参照する</li>
+</ul>
+</li>
 </ul>
 <h3 id="依存関係の追加">依存関係の追加</h3>
 <pre tabindex="0"><code>yarn add [package]
 yarn add [package]@[version]
-yarn add [package]@[tag]
-</code></pre><ul>
-<li>yarn addのオプション
+yarn add [package]@[tag] 
+</code></pre><p><code>yarn add</code>のオプションは代表例は下記の通りである。</p>
 <ul>
 <li><code>--dev</code>      : devDependenciesに依存関係を追加</li>
 <li><code>--peer</code>     : peerDependenciesに依存関係を追加</li>
 <li><code>--optional</code> : optionalDependenciesに依存関係を追加</li>
 </ul>
-</li>
+<p>なお、各依存関係の特徴を以下の通りである。</p>
+<ul>
+<li><code>devDependencies</code>: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係</li>
+<li><code>peerDependencies</code>: あるパッケージが動作するために必要となる他のパッケージの依存関係</li>
+<li><code>optionalDependencies</code>: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係</li>
 </ul>
 <h3 id="依存関係のアップグレード">依存関係のアップグレード</h3>
 <pre tabindex="0"><code>yarn upgrade [package]
@@ -263,17 +298,13 @@ yarn upgrade [package]@[tag]
 <pre tabindex="0"><code>yarn remove [package]
 </code></pre><h3 id="依存関係のインストール">依存関係のインストール</h3>
 <pre tabindex="0"><code>yarn install
-</code></pre>
+</code></pre><h3 id="インストール済みのパッケージを一覧表示">インストール済みのパッケージを一覧表示</h3>
+<pre tabindex="0"><code>yarn list
+</code></pre><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://chore-update--yarnpkg.netlify.app/ja/docs">Yarn 公式ドキュメント</a></li>
+</ul>
 
-        
-          <div class="blog-tags">
-            
-              <a href="https://mihaya03.github.io/mihaya-note//tags/package-manager/">package manager</a>&nbsp;
-            
-              <a href="https://mihaya03.github.io/mihaya-note//tags/yarn/">yarn</a>&nbsp;
-            
-          </div>
-        
 
         
 
@@ -284,12 +315,12 @@ yarn upgrade [package]@[tag]
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mihaya03.github.io/mihaya-note/posts/monotonic-stack/" data-toggle="tooltip" data-placement="top" title="Monotonic Stack">&larr; Previous Post</a>
+              <a href="http://localhost:1313/mihaya-note/posts/monotonic-stack/" data-toggle="tooltip" data-placement="top" title="Monotonic Stack">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/" data-toggle="tooltip" data-placement="top" title="markdownlint-cli2">Next Post &rarr;</a>
+              <a href="http://localhost:1313/mihaya-note/posts/markdownlint-cli2/" data-toggle="tooltip" data-placement="top" title="markdownlint-cli2">Next Post &rarr;</a>
             </li>
           
         </ul>
@@ -310,6 +341,16 @@ yarn upgrade [package]@[tag]
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
+              <li>
+		
+		  <a href="https://github.com/mihaya03" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
           
         </ul>
         <p class="credits copyright text-muted">
@@ -322,12 +363,12 @@ yarn upgrade [package]@[tag]
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://mihaya03.github.io/mihaya-note/">mihaya note</a>
+            <a href="http://localhost:1313/mihaya-note/">mihaya note</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.123.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.123.4</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -338,8 +379,8 @@ yarn upgrade [package]@[tag]
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-<script src="https://mihaya03.github.io/mihaya-note/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://mihaya03.github.io/mihaya-note/js/load-photoswipe.js"></script>
+<script src="http://localhost:1313/mihaya-note/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://localhost:1313/mihaya-note/js/load-photoswipe.js"></script>
 
 
 

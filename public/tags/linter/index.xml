@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linter on mihaya note</title>
-    <link>https://mihaya03.github.io/mihaya-note/tags/linter/</link>
+    <link>http://localhost:1313/mihaya-note/tags/linter/</link>
     <description>Recent content in Linter on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 24 Feb 2024 10:53:13 +0900</lastBuildDate>
-    <atom:link href="https://mihaya03.github.io/mihaya-note/tags/linter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mihaya-note/tags/linter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>markdownlint-cli2</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</link>
+      <link>http://localhost:1313/mihaya-note/posts/markdownlint-cli2/</link>
       <pubDate>Sat, 24 Feb 2024 10:53:13 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/markdownlint-cli2/</guid>
-      <description>markdownlint-cli2の使い方 概要 markdownlint-cli2はmarkdown用のlinter CLI上で操作可能 インストール npm install markdownlint-cli2 --global 参考 markdownlint-cli2 (GitHub) </description>
+      <guid>http://localhost:1313/mihaya-note/posts/markdownlint-cli2/</guid>
+      <description>markdownlint-cli2の使い方 概要 markdownlint-cli2はCLIで操作可能なmarkdown用のlinterである インストール npm install markdownlint-cli2 --global コマンドの形式 markdownlint-cli2 glob0 [glob1] [...] [globN] [--config file] [--fix] [--help] [glob]：linterの対象となるファイルを指定する [--config file]：lintのルールなどを記載した設定ファイルを指定する 設定ファイルは.markdownlint-cli2.jsonc、.markdownlint-cli2.yamlなどの形式で記述する コマンドを実行するディレクトリまたは、その上位のディレクトリに設定ファイルが存在する場合、markdownlint-cli2はそれを自動的に検出して適用する [--fix]: lint実行時に誤りの検知とともに、修正を行う 設定ファイルの形式 設定ファイルのフォーマットに関する詳細はスキーマを参照する。 以下では設定ファイル(.jsonc)の例を提示する。&#xA;{ // markdownlintの設定オブジェクト &amp;#34;config&amp;#34;: { &amp;#34;fenced-code-language&amp;#34;:false, // code blockの言語指定を許容 } } 参考 markdownlint-cli2 (GitHub) </description>
     </item>
   </channel>
 </rss>

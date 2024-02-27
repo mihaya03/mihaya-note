@@ -1,14 +1,8 @@
 <article class="post-preview">
     <a href="{{ .Permalink }}">
         <h2 class="post-title">{{ .Title }}</h2>
-        {{ if .Params.subtitle }}
-        <h3 class="post-subtitle">
-            {{ .Params.subtitle }}
-        </h3>
-        {{ end }}
     </a>
-    
-    <!-- イメージとビデオはタイトルの後、タグの直後に表示 -->
+
     {{ if .Params.image }}
     <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
     {{ end }}

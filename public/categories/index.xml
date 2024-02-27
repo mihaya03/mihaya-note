@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on mihaya note</title>
+    <link>http://localhost:1313/mihaya-note/categories/</link>
+    <description>Recent content in Categories on mihaya note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 25 Jan 2024 19:47:31 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/mihaya-note/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoの使い方</title>
+      <link>http://localhost:1313/mihaya-note/categories/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+      <pubDate>Thu, 25 Jan 2024 19:47:31 +0900</pubDate>
+      <guid>http://localhost:1313/mihaya-note/categories/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

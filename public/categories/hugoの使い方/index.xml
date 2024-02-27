@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on mihaya note</title>
-    <link>http://localhost:1313/mihaya-note/tags/hugo/</link>
-    <description>Recent content in Hugo on mihaya note</description>
+    <title>Hugoの使い方 on mihaya note</title>
+    <link>http://localhost:1313/mihaya-note/categories/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+    <description>Recent content in Hugoの使い方 on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 25 Jan 2024 19:47:31 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/mihaya-note/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mihaya-note/categories/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>テスト投稿</title>
       <link>http://localhost:1313/mihaya-note/posts/test/</link>

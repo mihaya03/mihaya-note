@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on mihaya note</title>
-    <link>https://mihaya03.github.io/mihaya-note/tags/go/</link>
+    <link>http://localhost:1313/mihaya-note/tags/go/</link>
     <description>Recent content in Go on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 17 Feb 2024 20:16:36 +0900</lastBuildDate>
-    <atom:link href="https://mihaya03.github.io/mihaya-note/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mihaya-note/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go encoding/json</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/go-json/</link>
+      <link>http://localhost:1313/mihaya-note/posts/go-json/</link>
       <pubDate>Sat, 17 Feb 2024 20:16:36 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/go-json/</guid>
+      <guid>http://localhost:1313/mihaya-note/posts/go-json/</guid>
       <description>encoding/jsonパッケージの使い方 概要 encoding/jsonパッケージは、JSONデータのエンコード（Go構造体→JSON）とデコード（JSON→Go構造体）を行うための関数と型を提供する インメモリを扱うEncoding/Decoding func Marshal(v any) ([]byte, error)&#xA;Go構造体のフィールド名をkey、フィールドの値をvalueとしたJSONにエンコードする keyの値はstring型である必要がある フィールドの値がポインタ型の場合、ポインタが指す値がエンコードされる 構造体のフィールドのうち、大文字で始まる変数のみがエンコードの対象となる SONのkey名称は、Go構造体のフィールドに指定されたjsonタグを優先し、存在しない場合はフィールド名を使用する func Unmarshal(data []byte, v any) error&#xA;JSONデータをGo構造体にデコードする JSONデータのkeyの名称とGo構造体のフィールド名の対応は下記の優先順位で定義される jsonタグの値と一致するGo構造体のフィールド名 Go構造体のフィールドの名称（大文字小文字は区別しない） ストリームを扱うEncoding/Decoding JSONを扱うReaderとWriterを使用する&#xA;Reader: json.Endoer func NewEncoder(w io.Writer) *Encoder 指定されたio.WriterにJSONを書き込むためのエンコーダを作成する func (enc *Encoder) Encode(v any) error JSON形式でエンコードし、それをストリームに書き込む Writer: json.Decoder func NewDecoder(r io.Reader ) *Decoder 指定されたio.ReaderからJSONを読み込むためのデコーダを作成する func (dec *Decoder) Decode(v any) error JSONを引数のGo構造体にデコードする 参考 JSON and Go jsonのドキュメント </description>
     </item>
     <item>
       <title>Go strconv</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/go-atoi/</link>
+      <link>http://localhost:1313/mihaya-note/posts/go-atoi/</link>
       <pubDate>Sat, 17 Feb 2024 16:13:15 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/go-atoi/</guid>
+      <guid>http://localhost:1313/mihaya-note/posts/go-atoi/</guid>
       <description>strconv 文字列と基本的なデータ型との変換 基本的な使い方 strconv.Atoi(s string) (int, error)&#xA;文字列を整数に変換する strconv.Itoa(i int) string&#xA;整数を文字列に変換 strconv.ParseFloat(s string, bitSize int) (float64, error)&#xA;文字列を浮動小数点型に変換 strconv.FormatFloat(f float64, fmt byte, prec, bitSize int) string&#xA;浮動小数点数を文字列に変換 fmtはフォーマット b: 2進数表記の指数形式 e: 指数形式 f: 通常の小数点形式 g: 数値の有効桁数を基に非指数形式または指数形式を自動選択 precは精度 指定したフォーマットに対応して、小数点以下の桁数、有効数字などを指定する strconv.ParseBool(str string) (bool, error)&#xA;文字列を論理値に変換 bool型と認識される文字列はtrue、false、1、0、t、fなど 参考 strconv </description>
     </item>
   </channel>

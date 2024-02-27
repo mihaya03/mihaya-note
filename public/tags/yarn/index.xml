@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yarn on mihaya note</title>
-    <link>https://mihaya03.github.io/mihaya-note/tags/yarn/</link>
+    <link>http://localhost:1313/mihaya-note/tags/yarn/</link>
     <description>Recent content in Yarn on mihaya note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 24 Feb 2024 10:29:21 +0900</lastBuildDate>
-    <atom:link href="https://mihaya03.github.io/mihaya-note/tags/yarn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mihaya-note/tags/yarn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yarn</title>
-      <link>https://mihaya03.github.io/mihaya-note/posts/yarn/</link>
+      <link>http://localhost:1313/mihaya-note/posts/yarn/</link>
       <pubDate>Sat, 24 Feb 2024 10:29:21 +0900</pubDate>
-      <guid>https://mihaya03.github.io/mihaya-note/posts/yarn/</guid>
-      <description>Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install </description>
+      <guid>http://localhost:1313/mihaya-note/posts/yarn/</guid>
+      <description>Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプションは代表例は下記の通りである。&#xA;--dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 なお、各依存関係の特徴を以下の通りである。&#xA;devDependencies: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係 peerDependencies: あるパッケージが動作するために必要となる他のパッケージの依存関係 optionalDependencies: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install インストール済みのパッケージを一覧表示 yarn list 参考 Yarn 公式ドキュメント </description>
     </item>
   </channel>
 </rss>

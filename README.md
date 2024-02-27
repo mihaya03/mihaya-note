@@ -1,3 +1,3 @@
 # github.ioのコンテンツ
 
-[https://github.com/mihaya03/mihaya-note]
+* [https://mihaya03.github.io/mihaya-note/]

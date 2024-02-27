@@ -20,7 +20,7 @@
       <link>http://localhost:1313/mihaya-note/posts/yarn/</link>
       <pubDate>Sat, 24 Feb 2024 10:29:21 +0900</pubDate>
       <guid>http://localhost:1313/mihaya-note/posts/yarn/</guid>
-      <description>Yarn プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプション --dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install </description>
+      <description>Yarnの使い方 プロジェクトの新規作成 yarn init プロジェクト情報を格納するpackage.jsonが生成される package.jsonにおけるバージョンの記載形式は、公式ドキュメントのセマンティックバージョニングの項目)を参照する 依存関係の追加 yarn add [package] yarn add [package]@[version] yarn add [package]@[tag] yarn addのオプションは代表例は下記の通りである。&#xA;--dev : devDependenciesに依存関係を追加 --peer : peerDependenciesに依存関係を追加 --optional : optionalDependenciesに依存関係を追加 なお、各依存関係の特徴を以下の通りである。&#xA;devDependencies: コード実行時には不要で、プロジェクトの開発時にのみ必要とされるパッケージ（テストフレームワーク、ビルドツールなど）の依存関係 peerDependencies: あるパッケージが動作するために必要となる他のパッケージの依存関係 optionalDependencies: 省略可能であるが存在すると何らかの追加機能や性能向上が期待できる依存関係 依存関係のアップグレード yarn upgrade [package] yarn upgrade [package]@[version] yarn upgrade [package]@[tag] 依存関係の削除 yarn remove [package] 依存関係のインストール yarn install インストール済みのパッケージを一覧表示 yarn list 参考 Yarn 公式ドキュメント </description>
     </item>
     <item>
       <title>Monotonic Stack</title>
@@ -44,13 +44,6 @@
       <description>strconv 文字列と基本的なデータ型との変換 基本的な使い方 strconv.Atoi(s string) (int, error)&#xA;文字列を整数に変換する strconv.Itoa(i int) string&#xA;整数を文字列に変換 strconv.ParseFloat(s string, bitSize int) (float64, error)&#xA;文字列を浮動小数点型に変換 strconv.FormatFloat(f float64, fmt byte, prec, bitSize int) string&#xA;浮動小数点数を文字列に変換 fmtはフォーマット b: 2進数表記の指数形式 e: 指数形式 f: 通常の小数点形式 g: 数値の有効桁数を基に非指数形式または指数形式を自動選択 precは精度 指定したフォーマットに対応して、小数点以下の桁数、有効数字などを指定する strconv.ParseBool(str string) (bool, error)&#xA;文字列を論理値に変換 bool型と認識される文字列はtrue、false、1、0、t、fなど 参考 strconv </description>
     </item>
     <item>
-      <title>Goならわかるシステムプログラミング 演習問題の解答</title>
-      <link>http://localhost:1313/mihaya-note/posts/go-system-programming-ch03/</link>
-      <pubDate>Wed, 07 Feb 2024 23:06:14 +0900</pubDate>
-      <guid>http://localhost:1313/mihaya-note/posts/go-system-programming-ch03/</guid>
-      <description>Q3.1：ファイルのコピー package main import ( &amp;#34;flag&amp;#34; &amp;#34;io&amp;#34; &amp;#34;os&amp;#34; ) func main() { oldFileName := flag.String(&amp;#34;old&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;古いファイルのパス&amp;#34;) newFileName := flag.String(&amp;#34;new&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;新しいファイルのパス&amp;#34;) flag.Parse() oldFilePath := *oldFileName newFilePath := *newFileName oldFile, err := os.Open(oldFilePath) if err != nil { panic(err) } defer oldFile.Close() newFile, err := os.Create(newFilePath) if err != nil { panic(err) } defer newFile.Close() if _, err := io.Copy(newFile, oldFile); err != nil { panic(err) } } Q3.2：テスト用の適当なサイズのファイルを作成 package main import ( &amp;#34;crypto/rand&amp;#34; &amp;#34;io&amp;#34; &amp;#34;os&amp;#34; ) func main() { file, err := os.</description>
-    </item>
-    <item>
       <title>Python itertools</title>
       <link>http://localhost:1313/mihaya-note/posts/python-itertools/</link>
       <pubDate>Tue, 30 Jan 2024 08:57:20 +0900</pubDate>
@@ -62,21 +55,7 @@
       <link>http://localhost:1313/mihaya-note/posts/test/</link>
       <pubDate>Thu, 25 Jan 2024 19:47:31 +0900</pubDate>
       <guid>http://localhost:1313/mihaya-note/posts/test/</guid>
-      <description>テスト投稿 記事の削除をpublicフォルダに反映させる hugo --cleanDestinationDir </description>
-    </item>
-    <item>
-      <title>Archives</title>
-      <link>http://localhost:1313/mihaya-note/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mihaya-note/archives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Categories</title>
-      <link>http://localhost:1313/mihaya-note/categories/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mihaya-note/categories/</guid>
-      <description></description>
+      <description>テスト投稿 記事の削除をpublicフォルダに反映させる&#xA;hugo --cleanDestinationDir 数式&#xA;$$ f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi $$&#xA;$2 \times 2$</description>
     </item>
   </channel>
 </rss>
