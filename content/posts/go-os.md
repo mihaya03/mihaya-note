@@ -1,7 +1,7 @@
 ---
 title: "Go os"
 date: 2024-03-01T16:10:58+09:00
-draft: true
+draft: false
 tags: ["Go", "os"]
 categories: ["usage & config"]
 ---
