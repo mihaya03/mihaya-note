@@ -9,7 +9,7 @@ categories: ["usage & config"]
 
 * ファイル操作を中心にosパッケージの使用方法を記載する。
 
-## ファイル操作
+## ファイル/ディレクトリ操作
 
 | 関数 | 説明 |
 | --- | --- |
@@ -19,6 +19,9 @@ categories: ["usage & config"]
 | `os.ReadDir(name string) ([]DirEntry, error)` | 指定されたディレクトリ内にあるファイル名を取得する |
 | `os.Remove(name string) error` | 指定された名前のファイルまたはディレクトリを削除する |
 | `os.Rename(oldpath, newpath string) error` | ファイル名を変更する |
+| `os.Chmod(name string, mode FileMode) error` | ファイルのモードを変更する |
+| `os.Chown(name string, uid, gid int) error` | ファイルの所有者を変更する |
+| `os.Stat(name string) (FileInfo, error)` | 指定されたファイルの情報を取得する |
 
 【補足】
 
@@ -32,16 +35,6 @@ type DirEntry interface {
 }
 
 ```
-
-## ファイル/ディレクトリ属性
-
-| 関数 | 説明 |
-| --- | --- |
-| `Stat(name string) (FileInfo, error)` | 指定されたファイルの情報を取得する |
-| `Chmod(name string, mode FileMode) error` | ファイルのモードを変更する |
-| `Chown(name string, uid, gid int) error` | ファイルの所有者を変更する |
-
-【補足】
 
 * `FileInfo`構造体は以下の関数を使用してファイル情報を取得できる
 
