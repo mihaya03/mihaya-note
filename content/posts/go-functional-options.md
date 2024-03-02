@@ -1,5 +1,5 @@
 ---
-title: "Go Functional Options"
+title: "Go Functional Option Pattern"
 date: 2024-03-02T17:56:50+09:00
 draft: false
 tags: ["Go", "design pattern "]
@@ -12,10 +12,10 @@ tags: ["Go", "design pattern "]
 
 ## 基本なアプローチ
 
-* 設定項目をフィールドとして持つ構造体を定義する。
-* 「設定項目をフィールドに持つ構造体へのポインタを受け取り、対象項目の値を設定する関数を返す」関数の型Option()`を定義する。この戻り値となる関数が実際に設定を適用する役割を担う。
-* 各設定項目に対応する`Option()`関数を実装する。
-* 実装した`Option`型の関数を引数として受け取り、それらを新しく生成されたインスタンスに適用するようなコンストラクタ関数を定義する。
+* 設定項目をフィールドとして持つ構造体を定義する
+* 設定項目をフィールドに持つ構造体へのポインタを受け取り、対象項目の値を設定する関数の型`Option`を定義する
+* 各設定項目ごとに、それぞれ実装した`Option()`関数を返す関数を定義する
+* Option型の関数を引数として受け取り、それらを新しく生成されたインスタンスに適用するようなコンストラクタ関数を定義する
 
 ## 使用例
 
@@ -28,10 +28,10 @@ type ImageProcessor struct {
 	filter        string
 }
 
-//「設定項目をフィールドに持つ構造体へのポインタを受け取り、対象項目の値を設定する関数を返す」関数の型Option()
+//「設定項目をフィールドに持つ構造体へのポインタを受け取り、対象項目の値を設定する関数の型を定義
 type Option func(*ImageProcessor)
 
-// 各設定項目に対応する`Option()`関数を実装
+// 各設定項目に対応する`Option()`関数を実装(1)
 func Resize(width, height int) Option {
 	return func(ip *ImageProcessor) {
 		ip.width = width
@@ -39,6 +39,7 @@ func Resize(width, height int) Option {
 	}
 }
 
+// 各設定項目に対応する`Option()`関数を実装(2)
 func Filter(filter string) Option {
 	return func(ip *ImageProcessor) {
 		ip.filter = filter
@@ -56,7 +57,7 @@ func NewImageProcessor(opts ...Option) *ImageProcessor {
 
 func main() {
 	ip := NewImageProcessor(Resize(800, 600), Filter("grayscale"))
-	// ここでipを使用する
+	// ipを使用した処理
 }
 
 ```
